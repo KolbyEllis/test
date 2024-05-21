@@ -1,0 +1,90 @@
+---
+title: 'Sitemap'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'sitemap/'
+eleventyNavigation:
+    key: Sitemap
+    order: 400
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/sitemap.css">
+{% endblock %}
+
+{% block body %}
+
+{% include 'components/banner.html' %}
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<!-- ============================================ 
+    This Stitch is used for content heavy interior pages
+    that have no design or layout.  Often times these are 
+    content silos where you talk extensively about a topic
+    to educate your visitors and rank on Google for the 
+    content.  These are great for pages that have a TON
+    of content.  Design isn't important here, it's all 
+    about making the content accessible and easy to read.
+================================================= -->
+
+<section id="content-page-1533">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Flower-->
+            <img class="cs-flower" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/flower-graphic.svg" alt="flower" loading="lazy" decoding="async" height="148" width="153">
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/interior-kid.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/interior-kid.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/interior-kid.jpg" alt="kid" width="522" height="540">
+            </picture>
+            <!--Floating Blob-->
+            <img class="cs-floater" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-events-left.svg" alt="graphic" loading="lazy" decoding="async" height="710" width="690">
+        </div>
+        <div class="cs-content">
+            <h4>Home Page</h4>
+            <h4>About Page</h4>
+            <h4>Sell Your Home</h4>
+            <h4>Houses For Rent</h4>
+            <h4>Apply For A Rental</h4>
+            <h4>Property Management</h4>
+            <h4>Reviews On Google!</h4>
+            <h4>Ask A management Question</h4>
+            <h4>Phoenix Home Monitoring</h4>
+            <h4>Goodyear, AZ</h4>
+            <h4>Buckeye, AZ</h4>
+            <h4>Tartesso, AZ</h4>
+            <h4>Surprise, AZ</h4>
+            <h4>Litchfield Park, AZ</h4>
+            <h4>Avondale, AZ</h4>
+            <h4>Tolleson, AZ</h4>
+            <h4>Peoria, AZ</h4>
+            <h4>Glendale, AZ</h4>
+            <h4>Phoenix, AZ</h4>
+            <h4>Paradise Valley, AZ</h4>
+            <h4>Scottsdale, AZ</h4>
+            <h4>Tempe, AZ</h4>
+            <h4>Mesa, AZ</h4>
+            <h4>Gilbert, AZ</h4>
+            <h4>Chandler, AZ</h4>
+            <h4>Blog</h4>
+            <h4>Resources</h4>
+            <h4>Owners</h4>
+            <h4>Tenants</h4>
+            <h4>Vendors</h4>
+            <h4>Contact Us</h4>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+                                
+
+{% include 'components/cta.html' %}
+
+{% endblock %}

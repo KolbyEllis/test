@@ -1,0 +1,65 @@
+---
+title: 'Landlords Submit A Question'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'landlords-submit-a-question/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/landlords-submit-a-question.css">
+{% endblock %}
+
+{% block body %}
+
+
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-983">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Landlords Submit A Question</h2>
+            <p class="cs-text">Fill out the form and we will get in contact with you soon!</p>
+        </div>
+        <!--Form-->
+        <form class="cs-form" id="cs-form-983" name="Landlord Question" method="post" netlify>
+            <label class="cs-label">
+                First Name
+                <input class="cs-input" required type="text" id="name-587-983" name="First Name" placeholder="First Name">
+            </label>
+            <label class="cs-label">
+                Last Name
+                <input class="cs-input" required type="text" id="name-587-983" name="Last Name" placeholder="Last Name">
+            </label>
+            <label class="cs-label">
+                Email
+                <input class="cs-input" required type="text" id="email-587-983" name="email" placeholder="Email">
+            </label>
+            <label class="cs-label">
+                Phone Number
+                <input class="cs-input" required type="text" id="phone-587-983" name="phone" placeholder="Enter Your Phone Number">
+            </label>
+            <label class="cs-label cs-message">
+                Question
+                <textarea class="cs-input cs-textarea" required name="Address" id="message-587-983" placeholder="Submit Your Question"></textarea>
+            </label>
+            <div class="cs-wrapper">
+                <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/salon-bg-m.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/salon-bg.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/salon-bg.jpg" alt="hair salon" width="2500" height="770">
+    </picture>
+</section>                               
+                                
+{% endblock %}

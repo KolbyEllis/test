@@ -1,0 +1,86 @@
+---
+title: 'Homes For Rent'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'homes-for-rent/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/rental-analysis.css">
+{% endblock %}
+
+{% block body %}
+
+
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-983">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Leasing A Home In Phoenix Area</span>
+            <h2 class="cs-title">Free Rental Assistance</h2>
+            <p class="cs-text">If we don't have what you are looking for, let us know, we have access to hundreds more! Fill out the form for free assistance, WE WILL reply within a few hours!!</p>
+            
+        </div>
+        <!--Form-->
+        <form class="cs-form" id="cs-form-983" name="Rental Analysis" method="post" netlify>
+            <label class="cs-label">
+                First Name
+                <input class="cs-input" required type="text" id="name-587-983" name="First Name" placeholder="First Name">
+            </label>
+            <label class="cs-label">
+                Last Name
+                <input class="cs-input" required type="text" id="name-587-983" name="Last Name" placeholder="Last Name">
+            </label>
+            <label class="cs-label">
+                Email
+                <input class="cs-input" required type="text" id="email-587-983" name="email" placeholder="Email">
+            </label>
+            <label class="cs-label">
+                Phone Number
+                <input class="cs-input" required type="text" id="phone-587-983" name="phone" placeholder="Enter Your Phone Number">
+            </label>
+            <label class="cs-label">
+                Rental Price Range
+                <input class="cs-input" required type="text" id="phone-587-983" name="price range" placeholder="Enter Your Preffered Price Range">
+            </label>
+            <label class="cs-label">
+                Preferred City
+                <input class="cs-input" required type="text" id="phone-587-983" name="city" placeholder="Enter The City You Are Interested in">
+            </label>
+            <label class="cs-label">
+                Features, Size, Etc You Need
+                <input class="cs-input" required type="text" id="phone-587-983" name="features" placeholder="Features, Size, Etc You Need">
+            </label>
+            <label class="cs-label">
+                What Pets Do You Have?
+                <input class="cs-input" required type="text" id="phone-587-983" name="pets" placeholder="Enter What Pets You Have">
+            </label>
+            <label class="cs-label">
+                Preffered Move In Date
+                <input class="cs-input" required type="text" id="phone-587-983" name="move in date" placeholder="Date You Would Like To Move">
+            </label>
+            <label class="cs-label">
+                Do You Smoke
+                <input class="cs-input" required type="text" id="phone-587-983" name="move in date" placeholder="Put Yes Or No">
+            </label>
+            <div class="cs-wrapper">
+                <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/salon-bg-m.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/salon-bg.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/salon-bg.jpg" alt="hair salon" width="2500" height="770">
+    </picture>
+</section>                               
+                                
+{% endblock %}
